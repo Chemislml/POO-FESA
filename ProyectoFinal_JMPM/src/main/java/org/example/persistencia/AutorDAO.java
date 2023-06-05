@@ -68,6 +68,7 @@ public class AutorDAO implements InterfazDAO{
     }
 
         //No se ocupo este metodo
+    /*
     @Override
     public Object buscarPorId(String id) throws SQLException {
         String sql = "SELECT * FROM autores WHERE Id = ?;";
@@ -84,6 +85,6 @@ public class AutorDAO implements InterfazDAO{
         return null;
     }
 
-
+    */
 }
 

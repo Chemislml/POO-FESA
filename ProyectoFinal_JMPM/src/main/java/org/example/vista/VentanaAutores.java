@@ -59,17 +59,24 @@ public class VentanaAutores extends JFrame {
         txtId.setEnabled(false);
         txtNombre = new JTextField(21);
         txtNombre.setFont(new Font("Arial", Font.ITALIC, 15));
+        txtNombre.setForeground(Color.BLUE);
         txtEdad = new JTextField(3);
         txtEdad.setFont(new Font("Arial", Font.ITALIC, 15));
+        txtEdad.setForeground(Color.BLUE);
         txtNacionalidad = new JTextField(10);
         txtNacionalidad.setFont(new Font("Arial", Font.ITALIC, 15));
+        txtNacionalidad.setForeground(Color.blue);
         cmbFinado = new JComboBox<>();
         cmbFinado.addItem("SI");
         cmbFinado.addItem("NO");
+        cmbFinado.setForeground(Color.BLUE);
         txtImagen = new JTextField(28);
         txtImagen.setFont(new Font("Arial", Font.ITALIC, 15));
+        txtImagen.setForeground(Color.BLUE);
         btnAgregar = new JButton("Agregar");
+        btnAgregar.setBackground(new Color(25, 96, 255));
         btnLimpiar = new JButton("Limpiar");
+        btnLimpiar.setBackground(new Color(25, 96, 255));
 
         panel1.add(lblId);
         panel1.add(txtId);
@@ -91,6 +98,7 @@ public class VentanaAutores extends JFrame {
         panel2 = new JPanel(new FlowLayout());
         panel2.setBackground(new Color(164, 255, 128));
         btnCargar = new JButton("Cargar");
+        btnCargar.setBackground(Color.green);
         panel2.add(btnCargar);
         tblAutor = new JTable();
         scrollPane = new JScrollPane(tblAutor);
@@ -104,13 +112,15 @@ public class VentanaAutores extends JFrame {
 
         //Panel 4 --------------------------------------------------------------------------------
         panel4 = new JPanel(new FlowLayout());
-        panel4.setBackground(new Color(255, 229, 55));
+        panel4.setBackground(new Color(248, 233, 105));
         lblInfoSel = new JLabel("Usted selecciono el elemento No. 0");
         lblInfoSel.setFont(new Font("Arial", Font.BOLD, 15));
-        JLabel accion = new JLabel("¿Que desea hacer?");
+        JLabel accion = new JLabel("   Que desea hacer?");
         accion.setFont(new Font("Arial", Font.BOLD, 15));
         btnEliminar = new JButton("Eliminar");
+        btnEliminar.setBackground(Color.yellow);
         btnModificar = new JButton("Modificar");
+        btnModificar.setBackground(Color.yellow);
 
         panel4.add(lblInfoSel);
         panel4.add(accion);

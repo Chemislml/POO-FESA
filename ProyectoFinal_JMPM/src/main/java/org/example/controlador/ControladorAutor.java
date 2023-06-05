@@ -133,7 +133,7 @@ public class ControladorAutor extends MouseAdapter {
                 if (temp.eliminarAutor(Integer.toString(tmp.getId()))) {
                     ImageIcon icon = new ImageIcon("borrador.png");
                     JOptionPane.showMessageDialog(view, "Se elimino correctamente", "Aviso"
-                            , JOptionPane.INFORMATION_MESSAGE);
+                            , JOptionPane.INFORMATION_MESSAGE,icon);
                     modelo.cargarDatos();
                     this.view.getTblAutor().updateUI();
                     this.view.limpiar();
